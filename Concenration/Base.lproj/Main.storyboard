@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Concenration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="PKx-4X-6FG" userLabel="StackLines">
+                                <rect key="frame" x="0.0" y="44" width="428" height="650"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="JB6-kO-AJH">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fa0-En-cXg" userLabel="View 1" customClass="CardView" customModule="Concenration" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdS-ya-gRW" userLabel="View 2" customClass="CardView" customModule="Concenration" customModuleProvider="target">
+                                                <rect key="frame" x="160.66666666666666" y="0.0" width="106.99999999999997" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9u6-yR-GRd" userLabel="View 3" customClass="CardView" customModule="Concenration" customModuleProvider="target">
+                                                <rect key="frame" x="321" y="0.0" width="107" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Htn-TI-TPl"/>
+                                            <constraint firstItem="Fa0-En-cXg" firstAttribute="width" secondItem="JB6-kO-AJH" secondAttribute="width" multiplier="0.25" id="Jgw-uR-3cQ"/>
+                                            <constraint firstItem="9u6-yR-GRd" firstAttribute="width" secondItem="JB6-kO-AJH" secondAttribute="width" multiplier="0.25" id="s8D-VH-ZcD"/>
+                                            <constraint firstItem="EdS-ya-gRW" firstAttribute="width" secondItem="JB6-kO-AJH" secondAttribute="width" multiplier="0.25" id="wul-7l-0mS"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Yy7-Ot-R8Q">
+                                        <rect key="frame" x="0.0" y="225" width="428" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGg-SU-X85" userLabel="View 1" customClass="CardView" customModule="Concenration" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBZ-Qk-X7v" userLabel="View 2" customClass="CardView" customModule="Concenration" customModuleProvider="target">
+                                                <rect key="frame" x="160.66666666666666" y="0.0" width="106.99999999999997" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07d-3d-Upp" userLabel="View 3" customClass="CardView" customModule="Concenration" customModuleProvider="target">
+                                                <rect key="frame" x="321" y="0.0" width="107" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zGg-SU-X85" firstAttribute="width" secondItem="Yy7-Ot-R8Q" secondAttribute="width" multiplier="0.25" id="62P-Xc-Tgo"/>
+                                            <constraint firstItem="yBZ-Qk-X7v" firstAttribute="width" secondItem="Yy7-Ot-R8Q" secondAttribute="width" multiplier="0.25" id="iRO-lv-YSi"/>
+                                            <constraint firstAttribute="height" constant="200" id="qsC-dN-jY9"/>
+                                            <constraint firstItem="07d-3d-Upp" firstAttribute="width" secondItem="Yy7-Ot-R8Q" secondAttribute="width" multiplier="0.25" id="z6n-7c-XRe"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="oEB-WP-pch">
+                                        <rect key="frame" x="0.0" y="450" width="428" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZW6-0Z-4Pk" userLabel="View 1" customClass="CardView" customModule="Concenration" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXW-QC-pbd" userLabel="View 2" customClass="CardView" customModule="Concenration" customModuleProvider="target">
+                                                <rect key="frame" x="160.66666666666666" y="0.0" width="106.99999999999997" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nu9-2z-FPc" userLabel="View 3" customClass="CardView" customModule="Concenration" customModuleProvider="target">
+                                                <rect key="frame" x="321" y="0.0" width="107" height="200"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </view>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="a7R-s7-6Vl"/>
+                                        <constraints>
+                                            <constraint firstItem="Nu9-2z-FPc" firstAttribute="width" secondItem="oEB-WP-pch" secondAttribute="width" multiplier="0.25" id="CyS-gi-3Aa"/>
+                                            <constraint firstItem="ZW6-0Z-4Pk" firstAttribute="width" secondItem="oEB-WP-pch" secondAttribute="width" multiplier="0.25" id="NlF-lj-Gp7"/>
+                                            <constraint firstItem="gXW-QC-pbd" firstAttribute="width" secondItem="oEB-WP-pch" secondAttribute="width" multiplier="0.25" id="wab-Wu-Wub"/>
+                                            <constraint firstAttribute="height" constant="200" id="wvS-7n-reL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JB6-kO-AJH" firstAttribute="top" secondItem="PKx-4X-6FG" secondAttribute="top" id="u86-Wa-wJH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PKx-4X-6FG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xuh-Hl-lAw"/>
+                            <constraint firstItem="PKx-4X-6FG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o1V-om-eUI"/>
+                            <constraint firstItem="PKx-4X-6FG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vj7-QA-je5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="cards" destination="Fa0-En-cXg" collectionClass="NSMutableArray" id="wlY-hR-9d3"/>
+                        <outletCollection property="cards" destination="EdS-ya-gRW" collectionClass="NSMutableArray" id="pyV-QM-dJY"/>
+                        <outletCollection property="cards" destination="9u6-yR-GRd" collectionClass="NSMutableArray" id="qAR-MD-Nmk"/>
+                        <outletCollection property="cards" destination="zGg-SU-X85" collectionClass="NSMutableArray" id="Wry-MS-RLo"/>
+                        <outletCollection property="cards" destination="yBZ-Qk-X7v" collectionClass="NSMutableArray" id="RAl-uO-8jP"/>
+                        <outletCollection property="cards" destination="07d-3d-Upp" collectionClass="NSMutableArray" id="j6i-Vd-YwH"/>
+                        <outletCollection property="cards" destination="ZW6-0Z-4Pk" collectionClass="NSMutableArray" id="A2F-n6-isc"/>
+                        <outletCollection property="cards" destination="gXW-QC-pbd" collectionClass="NSMutableArray" id="FjP-jw-s9d"/>
+                        <outletCollection property="cards" destination="Nu9-2z-FPc" collectionClass="NSMutableArray" id="A96-Qw-YEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
